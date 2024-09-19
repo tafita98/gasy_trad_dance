@@ -2,9 +2,43 @@
     margin: 0;
     top: 0;
 }
-body{
-      background: linear-gradient(to right, #04080f, #052d5a);
-      
+
+.entete{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 16%;
+    background: transparent;
+    transition: all  .50s ease;
+}
+.logo{
+    font-size: 36px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+span{
+    color: var(--main-color);
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--other-color);
+    margin-left: 20px;
+    transition: all .50s ease;
+}
+.menu a:hover{
+    color: var(--main-color);
+    text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
 .contenair{
     margin-top: 100px;
